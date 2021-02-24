@@ -32,6 +32,10 @@
    y.style.font="15pt 'Comic Sans MS'";
    y.style.textAlign="left";
     } 
+    function changeh1()
+    {
+      document.getElementById("myh1").innerHTML="All about me"
+    }
     function ChgToFam()
 	   {
 
@@ -49,6 +53,7 @@
  </head>
 <body>
     <h1 id="myh1" onclick="ChgStyle()"> Introduction to Pulkit Gupta</h1>
+    <p> <button onclick="changeh1()"> Click Here</button></p>
     <hr>
     <img id="myimg" src= "pulkitgupta.jpeg" alt="Picture of me/family" width="400" height="400" onmouseover="ChgToFam()" onmouseout="ChgToMe()">
 
