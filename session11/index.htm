@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styling.css" />
+    <title>All about Pulkit</title>
+    <style>
+      span{color:chocolate;font-family: Courier;}
+      @font-face {
+        font-family:Heading; src:url(Serfent-L3Kzg.ttf);
+      }
+      h1{font-family:Heading; font-weight: bold;}
+      p{ color: brown; font-family: Verdana;}
+      li ul{display: none;}
+      li:hover ul{display: block;}
+    </style>
+	<script>
+
+    function ChgStyle()
+    {
+      var x;
+      x=document.getElementById("myh1");
+   x.style.color="green";
+   x.style.font="30pt 'Comic Sans MS'";
+   x.style.textAlign="center";
+    }
+    function ChgPara() 
+    {
+      var y= document.getElementById("intro");
+   y.style.color="black";
+   y.style.font="15pt 'Comic Sans MS'";
+   y.style.textAlign="left";
+    } 
+    function ChgToFam()
+	   {
+
+	   		document.getElementById("myimg").src="family.jpeg";
+	   } 
+	   function ChgToMe()
+	   {
+	   	
+		document.getElementById("myimg").src="pulkitgupta.jpeg";
+	   } 
+
+
+  
+ </script>
+ </head>
+<body>
+    <h1 id="myh1" onclick="ChgStyle()"> Introduction to Pulkit Gupta</h1>
+    <hr>
+    <img id="myimg" src= "pulkitgupta.jpeg" alt="Picture of me/family" width="400" height="400" onmouseover="ChgToFam()" onmouseout="ChgToMe()">
+
+  <p id="intro" onmouseover="ChgPara()"> My hometown is New Delhi, India. <br> The best way to contact me is through:</p>
+   <ol><li>email
+     <ul><li>pgupta4@babson.edu</li>
+    </ul></li>
+<li>phone number
+  <ul><li>+1 646-785-6534</li></ul>
+  </li>
+   </ol> 
+     
+    <hr> 
+    <p> <span> Something interesting about me is that I can play 4 different instruments ie. the guitar, keyboard, drums, and the violin.</span> </p>
+    <a href="Interests.htm"> My interests</a>
+<hr>
+</body>
+</html>
